@@ -17,13 +17,31 @@ router.map({
 	'/':{
 		component: require('./home')
 	},
+	'/achieve': {
+		component: require('./achieve')
+	},
+	'/coach': {
+		component: require('./coach')
+	},
+	'/go': {
+		component : require('./go')
+	},
+	'/history': {
+		component: require('./history')
+	},
+	'/home':{
+		component: require('./home')
+	},
 	'/loop': {
 		component: require('./loop')
+	},
+	'/study': {
+		component: require('./study')
 	},
 	'/type': {
 		component: require('./type')
 	}
 })
 
-//套路4： 导出
+//套路4： 导出路由
 export default router

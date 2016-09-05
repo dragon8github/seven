@@ -1,20 +1,16 @@
 <template>
 	<div>
 		<header class="mui-bar mui-bar-nav">
-			<a class="mui-pull-left">
-				<img src="./../../static/images/title.png" alt="logo" height="44px">
-			</a>
-			<span class="mui-pull-right mui-icon mui-icon-info" @click="SetFilter"></span>
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">成就</h1>
 		</header>
 		<div class="mui-content">
 			<div style="margin:30px 0px;height:310px;display:flex;justify-content:center;align-item:center">
-				<a href="javascript:;" v-link="{ path: '/go' }">
-					<img src="./../../static/images/start.jpg" alt="开始锻炼" style="max-width:300px;min-width:290px">
-				</a>
+				<img src="./../../static/images/start.jpg" alt="开始锻炼" style="max-width:300px;min-width:290px">
 			</div>
 			<ul class="mui-table-view">
 				<li class="mui-table-view-cell mui-media">
-					<a href="javascript:;" class="mui-navigate-right" v-link="{ path: '/type' }">
+					<a href="javascript:;" class="mui-navigate-right">
 						<span class="mui-badge" style="background: transparent; font-size: smaller; color:#447373;">随机</span>
 						<div class="mui-media-object mui-pull-left"><i class="icon iconfont">&#xe603;</i></div>
 						<div class="mui-media-body" style="margin-top:10px;">
@@ -23,7 +19,7 @@
 					</a>
 				</li>
 				<li class="mui-table-view-cell mui-media">
-					<a href="javascript:;"  class="mui-navigate-right"  v-link="{ path: '/loop' }">
+					<a href="javascript:;"  class="mui-navigate-right">
 						<span class="mui-badge" style="background: transparent; font-size: smaller; color:#447373;">5</span>
 						<div class="mui-media-object mui-pull-left"><i class="icon iconfont">&#xe606;</i></div>
 						<div class="mui-media-body" style="margin-top:10px;">
@@ -32,7 +28,7 @@
 					</a>
 				</li>
 				<li class="mui-table-view-cell mui-media">
-					<a href="javascript:;"  class="mui-navigate-right"  v-link="{ path: '/coach' }">
+					<a href="javascript:;"  class="mui-navigate-right">
 						<span class="mui-badge" style="background: transparent; font-size: smaller; color:#447373;">林志玲</span>
 						<div class="mui-media-object mui-pull-left"><i class="icon iconfont">&#xe605;
 						</i></div>
@@ -45,22 +41,3 @@
 		</div>
 	</div>
 </template>
-
-<script>
-	export default {
-		methods : {
-			SetFilter () {
-				layer.open({
-					title: [
-					'<img src="./../../static/images/title.png" alt="logo" height="44px" style="margin-top:8px">',
-					'background-color: #BC5B4A; color:#fff;margin: 0;'
-					]
-					,content: '<p>12个练习灭每个各练30秒，中间休息10秒。锻炼强度在1-10为内应该为8左右，请刻苦坚持一点。 </p><p>好消息是，7分钟后，你就完成了。</p>'
-					,btn: ['知道了']
-					,success:function(){$('.layui-m-layerbtn span[yes]').css({"color":"inherit"})}
-				});
-
-			}
-		}
-	}
-</script>

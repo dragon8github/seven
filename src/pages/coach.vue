@@ -2,10 +2,13 @@
 	<div>
 		<header class="mui-bar mui-bar-nav">
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-			<h1 class="mui-title">循环</h1>
+			<h1 class="mui-title">教练</h1>
 		</header>
 		<div class="mui-content">
-			<ul class="mui-table-view" style="margin-top:40px">
+			<div class="title">
+				语音	
+			</div>
+			<ul class="mui-table-view">
 				<li class="mui-table-view-cell mui-media">
 					<a href="javascript:;">
 						<img class="mui-media-object mui-pull-left" src="../../static/images/shuijiao.jpg">
@@ -60,7 +63,6 @@
 					</a>
 				</li>
 			</ul>
-			
 		</div>
 	</div>
 </template>
