@@ -3,7 +3,6 @@
 		<header class="mui-bar mui-bar-nav">
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 			<h1 class="mui-title">类型</h1>
-			<a class="mui-action-back mui-icon mui-icon-plusempty mui-pull-right"></a>
 		</header>
 		<div class="mui-content">
 			<div class="title">
@@ -71,6 +70,7 @@
 				</li>
 			</ul>
 		</div>
+
 	</div>
 </template>
 

@@ -1,13 +1,11 @@
 <template>
-	<div>
+	<div id="home"  class="mui-control-content mui-active">
 		<header class="mui-bar mui-bar-nav">
-			<a class="mui-pull-left">
-				<img src="./../../static/images/title.png" alt="logo" height="44px">
-			</a>
+			<a class="mui-pull-left"> <img src="./../../static/images/title.png" alt="logo" height="44px"> </a>
 			<span class="mui-pull-right mui-icon mui-icon-info" @click="SetFilter"></span>
 		</header>
 		<div class="mui-content">
-			<div style="margin:30px 0px;height:310px;display:flex;justify-content:center;align-item:center">
+			<div style="height:350px;display:flex;justify-content:center;align-item:center">
 				<a href="javascript:;" v-link="{ path: '/go' }">
 					<img src="./../../static/images/start.jpg" alt="开始锻炼" style="max-width:300px;min-width:290px">
 				</a>

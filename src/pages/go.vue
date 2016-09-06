@@ -20,32 +20,39 @@
 	export default {
 		data () {
 			return {
-				timer: 30,
-				stop : false
+				timer: 30,	   //默认倒数30秒
+				stop : false,   //默认是停止的，但界面加载之后会变成false
+				Interval:null  //setInterval的对象
 			}
 		},
 		methods : {
-			update (i,target) {
-				if(i >= target) 
+			update () {
+				if(this.timer <= 0) 
 				{
-					alert("倒计时完成");
+					this.timer = 30;
 				}
 				else{
-					var now = secs - i;
-					console.log(secs,i,now);
-					$('.timer').text(now);
+					this.timer--;
 				}
 			},
 			startTimer () {
-				alert(this.timer);
+				
+				if(this.stop == false) 
+				{
+					this.Interval = setInterval(this.update,1000);	
+				}
+				else
+				{
+					clearInterval(this.Interval);
+				}
+
+				this.stop = !this.stop;
 			}
 		}
 	}
+
 	$(function(){
-		var secs = parseInt($(".timer").text());
-		for(var i = 1 ; i<=secs ; i++) {
-			window.setTimeout('update', i * 1000); 
-		}	
+		$(".timer").click();
 	})
 </script>
 

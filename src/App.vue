@@ -2,23 +2,10 @@
 	<div>
 		<div id="controller">
 			<!-- 路由外链 -->
-			<router-view transition="back" transition-mode="in-out" keep-alive></router-view>
+			<router-view transition="back" transition-mode="in-out" ></router-view>
 		</div>
-		<myfooter></myfooter>
 	</div>
 </template>
-
-<script>
-	import myfooter from './components/footer'
-
-	export default {
-		components : {
-			myfooter
-		}
-	}
-
-</script>
-
 
 <style>
 	
@@ -40,8 +27,5 @@
 		height: 100%;
 		z-index: 0;
 	}
-	#controller > .mui-content{height:100%;}
 	.v-link-active > .mui-icon,.v-link-active > .mui-tab-label{color:tan;}
-	/*.mui-active > .mui-icon,.mui-active > .mui-tab-label{color:tan;}*/
-
 </style>

@@ -14,30 +14,23 @@ var router = new VueRouter()
 
 // 套路4：定制路由
 router.map({
+	//首页
 	'/':{
-		component: require('./home')
+		component: require('./index')
 	},
-	'/achieve': {
-		component: require('./achieve')
-	},
+	//教练
 	'/coach': {
 		component: require('./coach')
 	},
+	//运动
 	'/go': {
 		component : require('./go')
 	},
-	'/history': {
-		component: require('./history')
-	},
-	'/home':{
-		component: require('./home')
-	},
+	//循环
 	'/loop': {
 		component: require('./loop')
 	},
-	'/study': {
-		component: require('./study')
-	},
+	//类型
 	'/type': {
 		component: require('./type')
 	}
