@@ -1,6 +1,6 @@
 
 <template>
-	<div id="setting"  class="mui-control-content">
+	<div id="tab4"  class="mui-control-content">
 		<header class="mui-bar mui-bar-nav">
 			<h1 class="mui-title">设置</h1>
 		</header>
@@ -11,7 +11,7 @@
 			<ul class="mui-table-view">
 				<li class="mui-table-view-cell mui-media">
 					<a href="javascript:;" class="mui-navigate-right">
-						<img class="mui-media-object mui-pull-left" src="../../static/images/tixing.png">
+						<img class="mui-media-object mui-pull-left" src="./../../../static/images/tixing.png">
 						<div class="mui-media-body">
 							提醒
 						</div>
@@ -19,7 +19,7 @@
 				</li>
 				<li class="mui-table-view-cell mui-media">
 					<a href="javascript:;" class="mui-navigate-right">
-						<img class="mui-media-object mui-pull-left" src="../../static/images/yinyue.png">
+						<img class="mui-media-object mui-pull-left" src="./../../../static/images/yinyue.png">
 						<div class="mui-media-body">
 							声音
 						</div>
@@ -27,7 +27,7 @@
 				</li>
 				<li class="mui-table-view-cell mui-media">
 					<a href="javascript:;">
-						<img class="mui-media-object mui-pull-left" height="38px" src="../../static/images/zhendong.png">
+						<img class="mui-media-object mui-pull-left" height="38px" src="./../../../static/images/zhendong.png">
 						<div class="mui-media-body">
 							震动
 						</div>
@@ -43,7 +43,7 @@
 			<ul class="mui-table-view">
 				<li class="mui-table-view-cell mui-media">
 					<a href="javascript:;" class="mui-navigate-right">
-						<img class="mui-media-object mui-pull-left" src="../../static/images/jiankang.png">
+						<img class="mui-media-object mui-pull-left" src="./../../../static/images/jiankang.png">
 						<div class="mui-media-body">
 							健康
 						</div>
@@ -51,7 +51,7 @@
 				</li>
 				<li class="mui-table-view-cell mui-media">
 					<a href="javascript:;" class="mui-navigate-right">
-						<img class="mui-media-object mui-pull-left" src="../../static/images/jiange.png">
+						<img class="mui-media-object mui-pull-left" src="./../../../static/images/jiange.png">
 						<div class="mui-media-body">
 							间隔
 						</div>
@@ -59,7 +59,7 @@
 				</li>
 				<li class="mui-table-view-cell mui-media">
 					<a href="javascript:;">
-						<img class="mui-media-object mui-pull-left" src="../../static/images/suiji.png">
+						<img class="mui-media-object mui-pull-left" src="./../../../static/images/suiji.png">
 						<div class="mui-media-body">
 							随机
 						</div>
@@ -77,9 +77,10 @@
 	</div>
 </template>
 <style>
+	.title {margin: 20px 15px 10px; color: #6d6d72; font-size: 15px; }
 	#web_info{text-align: center;margin:50px auto 100px;}
-	#setting .mui-media-body{padding-top:8px;}
-	#setting .mui-table-view-cell>a:not(.mui-btn) {margin:-13px -15px;}
-	#setting .mui-table-view .mui-media-object img{height:auto;}
+	#tab4 .mui-media-body{padding-top:11px;}
+	#tab4 .mui-table-view-cell>a:not(.mui-btn) {margin:-16px -15px;}
+	#tab4 .mui-table-view .mui-media-object img{height:auto;}
 </style>
 

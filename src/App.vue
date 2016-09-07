@@ -1,31 +1,27 @@
 <template>
 	<div>
-		<div id="controller">
-			<!-- 路由外链 -->
-			<router-view transition="back" transition-mode="in-out" ></router-view>
-		</div>
+		<tab1></tab1>
+		<tab2></tab2>
+		<tab3></tab3>
+		<tab4></tab4>
+		<myfooter></myfooter>
 	</div>
 </template>
 
-<style>
-	
-	/*定义动画效果*/
-	.back-transition { 
-		transition: transform .4s ease;
-	}
-	/*定义新窗口的入场效果*/
-	.back-enter{
-		transform: translate(100%,0);
-	}
-	/*定义旧窗口的退出效果*/
-	.back-leave {
-		transform: translate(-100%,0);
-	}
-	#controller > .back-transition{
-		position:absolute;
-		width: 100%;
-		height: 100%;
-		z-index: 0;
-	}
-	.v-link-active > .mui-icon,.v-link-active > .mui-tab-label{color:tan;}
-</style>
+<script>
+	import tab1 from './components/tab1/index'
+	import tab2 from './components/tab2/index'
+	import tab3 from './components/tab3/index'
+	import tab4 from './components/tab4/index'
+	import myfooter from './components/footer'
+
+	export default {
+		components: {
+			tab1,
+			tab2,
+			tab3,
+			tab4,
+			myfooter
+		}
+	}	
+</script>

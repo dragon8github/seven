@@ -1,28 +1,26 @@
 <template>
 	<div>
-		<home></home>
-		<study></study>
-		<achieve></achieve>
-		<setting></setting>
+		<tab1></tab1>
+		<tab2></tab2>
+		<tab3></tab3>
+		<tab4></tab4>
 		<myfooter></myfooter>
 	</div>
 </template>
 
 <script>
-	import home from './../components/home'
-	import study from './../components/study'
-	import achieve from './../components/achieve'
-	import setting from './../components/setting'
+	import tab1 from './../components/tab1/index'
+	import tab2 from './../components/tab2/index'
+	import tab3 from './../components/tab3/index'
+	import tab4 from './../components/tab4/index'
 	import myfooter from './../components/footer'
-
-	console.log(myfooter)
 
 	export default {
 		components: {
-			home,
-			study,
-			achieve,
-			setting,
+			tab1,
+			tab2,
+			tab3,
+			tab4,
 			myfooter
 		}
 	}	
