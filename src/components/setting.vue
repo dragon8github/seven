@@ -64,7 +64,7 @@
 							随机
 						</div>
 					</a>
-					<div class="mui-switch mui-active mui-switch-mini" data-switch="9">
+					<div class="mui-switch mui-switch-mini" data-switch="10">
 						<div class="mui-switch-handle"></div>
 					</div>
 				</li>
