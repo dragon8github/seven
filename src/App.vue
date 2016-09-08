@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div style="height: 100vh;">
 		<tab1></tab1>
 		<tab2></tab2>
 		<tab3></tab3>

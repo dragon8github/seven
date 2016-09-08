@@ -1,8 +1,9 @@
-  body{background:#FAFAF7;color:#447373;overflow: hidden;}
+  body{background:#FAFAF7;color:#447373;overflow: hidden;height: 100vh;}
  .mui-bar{background: #BC5B4A;}
  .mui-content{background:#FAFAF7}
  .mui-table-view{background: transparent;}
  .mui-icon,.mui-tab-label,.mui-title{color:#FAFAFA;} 
  .mui-media-object .iconfont{font-size:25px;}
  .mui-icon .iconfont{font-size:25px;}
- .mui-content{height:100%;}
+ .mui-content,.mui-control-content{height:100%;}
+
