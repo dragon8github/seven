@@ -22,13 +22,13 @@
 			<div class="mui-scroll-wrapper">
 				<div class="mui-scroll">
 					<div style="height:350px;display:flex;justify-content:center;align-item:center">
-						<a href="javascript:;">
+						<a href="#go">
 							<img src="./../../../static/images/start.jpg" alt="开始锻炼" style="max-width:300px;min-width:290px">
 						</a>
 					</div>
 					<ul class="mui-table-view">
 						<li class="mui-table-view-cell mui-media">
-							<a href="#coach" class="mui-navigate-right">
+							<a href="#type" class="mui-navigate-right">
 								<span class="mui-badge" style="background: transparent; font-size: smaller; color:#447373;">随机</span>
 								<div class="mui-media-object mui-pull-left"><i class="icon iconfont">&#xe603;</i></div>
 								<div class="mui-media-body" style="margin-top:10px;">
@@ -37,7 +37,7 @@
 							</a>
 						</li>
 						<li class="mui-table-view-cell mui-media">
-							<a href="javascript:;"  class="mui-navigate-right"  >
+							<a href="#loop"  class="mui-navigate-right"  >
 								<span class="mui-badge" style="background: transparent; font-size: smaller; color:#447373;">5</span>
 								<div class="mui-media-object mui-pull-left"><i class="icon iconfont">&#xe606;</i></div>
 								<div class="mui-media-body" style="margin-top:10px;">
@@ -46,7 +46,7 @@
 							</a>
 						</li>
 						<li class="mui-table-view-cell mui-media">
-							<a href="javascript:;"  class="mui-navigate-right" >
+							<a href="#coach"  class="mui-navigate-right" >
 								<span class="mui-badge" style="background: transparent; font-size: smaller; color:#447373;">林志玲</span>
 								<div class="mui-media-object mui-pull-left"><i class="icon iconfont">&#xe605;
 								</i></div>
@@ -62,16 +62,26 @@
 	</div>	
 	<!--页面主内容区结束-->
 	
+	<go></go>
+	<type></type>
 	<coach></coach>
+	<loop></loop>
+	
 
 </template>
 
 <script>
+	import go from './go'
 	import coach from './coach'
+	import loop from './loop'
+	import type from './type'
 
 	export default {
 		components: {
-			coach
+			go,
+			coach,
+			loop,
+			type
 		},
 		methods : {
 			SetFilter () {
