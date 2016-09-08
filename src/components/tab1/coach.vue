@@ -1,10 +1,10 @@
 <template>
-<div id="coach" class="mui-page">
+	<div id="coach" class="mui-page">
 		<div class="mui-navbar-inner mui-bar mui-bar-nav">
-			<button type="button" class="mui-navbar-left mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+			<button type="button" class="mui-navbar-left mui-left mui-action-back mui-btn mui-btn-link mui-btn-nav mui-pull-left">
 				<span class="mui-icon mui-icon-left-nav"></span>
 			</button>
-			<h1 class="mui-center mui-title">教练</h1>
+			<h1 class="mui-title">教练</h1>
 		</div>
 		<div class="mui-page-content">
 			<div class="mui-scroll-wrapper">
