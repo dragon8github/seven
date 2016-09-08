@@ -241,10 +241,10 @@
 				this._removePage(this.activePage, this.activeNavbar);
 				this.previousPageClassList.remove(CLASS_PAGE_LEFT);
 				this.previousPageClassList.add(CLASS_PAGE_CENTER);
-				if (this.previousNavbar) {
-					this.previousNavbar.classList.remove(CLASS_NAVBAR_LEFT);
-					this.previousNavbar.classList.add(CLASS_NAVBAR_CENTER);
-				}
+				// if (this.previousNavbar) {
+				// 	this.previousNavbar.classList.remove(CLASS_NAVBAR_LEFT);
+				// 	this.previousNavbar.classList.add(CLASS_NAVBAR_CENTER);
+				// }
 				if (this.history.length > 0) {
 					this._prependPage(this.history.pop());
 				}
@@ -582,6 +582,7 @@
 				}
 
 
+
 				nextPage.style.webkitTransform = 'translate3d(100%,0,0)';
 				this._appendPage(nextPage);
 				nextPage.appendChild(this.shadow); //shadow
@@ -594,14 +595,18 @@
 				this.navbars && this._initNavBar();
 
 				this.navbars && this._setNavbarTranslate(this.maxScrollX, 0);
+
 				//force
 				this.previousPage.offsetHeight;
 				this.activePage.offsetHeight;
+
+
 
 				if (this.navbars) {
 					this.previousNavbar.offsetHeight;
 					this.activeNavbar.offsetHeight;
 				}
+
 
 				this._trigger('pageBeforeShow', this.activePage);
 				this._prepareTransition();
