@@ -130,6 +130,11 @@
 			    });
 			    view.addEventListener('pageShow', function(e) {
 			        //                console.log(e.detail.page.id + ' show');
+			        //如果是运动界面，则自动开启倒计时、这里采用模拟点击的方式开启
+			        if(e.detail.page.id == "go")
+			        {
+			        	document.querySelector('.timer').click();
+			        }
 			    });
 			    view.addEventListener('pageBeforeBack', function(e) {
 			        //                console.log(e.detail.page.id + ' beforeBack');
