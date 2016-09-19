@@ -11,7 +11,7 @@
 			<ul class="mui-table-view">
 				<li class="mui-table-view-cell mui-media">
 					<a href="javascript:;" class="mui-navigate-right">
-						<img class="mui-media-object mui-pull-left" src="./../../../static/images/tixing.png">
+						<img class="mui-media-object mui-pull-left" data-lazyload="./../../../static/images/tixing.png">
 						<div class="mui-media-body">
 							提醒
 						</div>
@@ -19,7 +19,7 @@
 				</li>
 				<li class="mui-table-view-cell mui-media">
 					<a href="javascript:;" class="mui-navigate-right">
-						<img class="mui-media-object mui-pull-left" src="./../../../static/images/yinyue.png">
+						<img class="mui-media-object mui-pull-left" data-lazyload="./../../../static/images/yinyue.png">
 						<div class="mui-media-body">
 							声音
 						</div>
@@ -27,7 +27,7 @@
 				</li>
 				<li class="mui-table-view-cell mui-media">
 					<a href="javascript:;">
-						<img class="mui-media-object mui-pull-left" height="38px" src="./../../../static/images/zhendong.png">
+						<img class="mui-media-object mui-pull-left" height="38px" data-lazyload="./../../../static/images/zhendong.png">
 						<div class="mui-media-body">
 							震动
 						</div>
@@ -43,7 +43,7 @@
 			<ul class="mui-table-view">
 				<li class="mui-table-view-cell mui-media">
 					<a href="javascript:;" class="mui-navigate-right">
-						<img class="mui-media-object mui-pull-left" src="./../../../static/images/jiankang.png">
+						<img class="mui-media-object mui-pull-left" data-lazyload="./../../../static/images/jiankang.png">
 						<div class="mui-media-body">
 							健康
 						</div>
@@ -51,7 +51,7 @@
 				</li>
 				<li class="mui-table-view-cell mui-media">
 					<a href="javascript:;" class="mui-navigate-right">
-						<img class="mui-media-object mui-pull-left" src="./../../../static/images/jiange.png">
+						<img class="mui-media-object mui-pull-left" data-lazyload="./../../../static/images/jiange.png">
 						<div class="mui-media-body">
 							间隔
 						</div>
@@ -59,7 +59,7 @@
 				</li>
 				<li class="mui-table-view-cell mui-media">
 					<a href="javascript:;">
-						<img class="mui-media-object mui-pull-left" src="./../../../static/images/suiji.png">
+						<img class="mui-media-object mui-pull-left" data-lazyload="./../../../static/images/suiji.png">
 						<div class="mui-media-body">
 							随机
 						</div>

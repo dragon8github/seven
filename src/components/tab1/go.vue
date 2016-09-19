@@ -46,13 +46,7 @@
 			},
 			startTimer () {				
 				
-				$(".timer input").animate({
-					"font-size":"46px"
-				}, 150, 'ease',function(){
-					$(".timer input").animate({
-						"font-size":"26px"
-					}, 150, 'ease')
-				});
+				this.animate_fontSize()
 
 				if(this.stop == false) 
 				{
@@ -64,6 +58,15 @@
 				}
 
 				this.stop = !this.stop;
+			},
+			animate_fontSize () {
+				$(".timer input").animate({
+					"font-size":"46px"
+				}, 150, 'ease',function(){
+					$(".timer input").animate({
+						"font-size":"26px"
+					}, 150, 'ease')
+				});
 			}
 		}
 	}
@@ -85,7 +88,6 @@
 		justify-content: center;
 		align-items: center;
 		border-radius:50%;
-		border:1px solid #ccc;
 		width:85px;
 		height:80px;
 		margin:auto;
@@ -101,7 +103,6 @@
 	    padding: 0px;
 	    background: transparent;
 	    font-size: 26px;
-	    font-weight: bold;
 	    color: orange;
 	}
 </style>

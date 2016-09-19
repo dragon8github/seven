@@ -3,9 +3,9 @@ var express = require('express')
 var webpack = require('webpack')
 var config = require('../config')
 var proxyMiddleware = require('http-proxy-middleware')
-var webpackConfig = process.env.NODE_ENV === 'testing'
-  ? require('./webpack.prod.conf')
-  : require('./webpack.dev.conf')
+var webpackConfig = process.env.NODE_ENV === 'testing'? require('./webpack.prod.conf') : require('./webpack.dev.conf')
+
+console.log(webpackConfig);
 
 // default port where dev server listens for incoming traffic
 var port = process.env.PORT || config.dev.port
@@ -16,6 +16,7 @@ var proxyTable = config.dev.proxyTable
 var app = express()
 var compiler = webpack(webpackConfig)
 
+
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
   publicPath: webpackConfig.output.publicPath,
   stats: {
@@ -23,8 +24,11 @@ var devMiddleware = require('webpack-dev-middleware')(compiler, {
     chunks: false
   }
 })
-
+//總結來說就是 webpack-dev-middleware + webpack-hot-middleware 
+//即可讓我們用 express 客製一個有熱替換功能的 webpack 開發伺服器。
 var hotMiddleware = require('webpack-hot-middleware')(compiler)
+
+
 // force page reload when html-webpack-plugin template changes
 compiler.plugin('compilation', function (compilation) {
   compilation.plugin('html-webpack-plugin-after-emit', function (data, cb) {

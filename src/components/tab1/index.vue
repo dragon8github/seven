@@ -14,7 +14,7 @@
 	<div id="index" class="mui-page">
 	  <!--页面标题栏开始-->
         <div class="mui-navbar-inner mui-bar mui-bar-nav">
-            <a class="mui-pull-left"> <img src="./../../../static/images/title.png" alt="logo" height="44px"> </a>
+            <a class="mui-pull-left"> <img data-lazyload="./../../../static/images/title.png" alt="logo" height="44px"> </a>
             <h1 class="mui-center mui-title">设置</h1>
             	<span class="mui-pull-right mui-icon mui-icon-info" @click="SetFilter"></span>
         </div>
@@ -23,7 +23,7 @@
 				<div class="mui-scroll">
 					<div style="height:350px;display:flex;justify-content:center;align-item:center">
 						<a href="#go">
-							<img src="./../../../static/images/start.jpg" alt="开始锻炼" style="max-width:300px;min-width:290px">
+							<img data-lazyload="./../../../static/images/start.jpg" alt="开始锻炼" style="max-width:300px;min-width:290px">
 						</a>
 					</div>
 					<ul class="mui-table-view">
@@ -87,7 +87,7 @@
 			SetFilter () {
 				layer.open({
 					title: [
-					'<img src="./../../../static/images/title.png" alt="logo" height="44px" style="margin-top:8px">',
+					'<img data-lazyload="./../../../static/images/title.png" alt="logo" height="44px" style="margin-top:8px">',
 					'background-color: #BC5B4A; color:#fff;margin: 0;'
 					]
 					,content: '<p>12个练习灭每个各练30秒，中间休息10秒。锻炼强度在1-10为内应该为8左右，请刻苦坚持一点。 </p><p>好消息是，7分钟后，你就完成了。</p>'
